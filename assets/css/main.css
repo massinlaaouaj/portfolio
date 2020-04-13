@@ -47,30 +47,6 @@ h1 {
     white-space: nowrap;
 }
 
-.section {
-    padding-top: 100px;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.left {
-    display: flex;
-    width: 20%;
-    margin-left: 0px;
-    float: left;
-    padding-left: 60px;
-}
-.right {
-    display: flex;
-    width: 80%;
-    margin-right: 0px;
-    float: right;
-    justify-content: center;
-}
-
 .table-skills {
     margin-top: 10px;
 }
@@ -91,5 +67,72 @@ td {
 
 .table-projects {
     margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    float: right;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: #36363C;
+    display: inline-block;
+    padding: 0px 7px;
+    transition: all .2s ease-in-out;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 870px) {
+    
+    .section {
+        padding-top: 100px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        display: -ms-flexbox;
+        display: block;
+        padding: 50px 35px;
+    }
+    .left {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .right {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 870px) {
+
+
+    .section {
+        padding-top: 100px;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .left {
+        display: flex;
+        width: 20%;
+        margin-left: 0px;
+        float: left;
+        padding-left: 60px;
+    }
+    .right {
+        display: flex;
+        width: 80%;
+        margin-right: 0px;
+        float: right;
+        justify-content: center;
+    }
 }
 
