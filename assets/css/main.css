@@ -6,6 +6,12 @@
     --color-text: #36363C;
 }
 
+body,html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
 body {
     font-family: "Source Sans Pro", sans-serif;
 }
@@ -82,11 +88,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         max-width: 700px;
-        height: 80vh;
-        margin-top: 10px;
-        margin: 0px auto;
-        margin-bottom: 90px;
-        padding: 10px;
+        padding: 35px;
         color: var(--color-text);
     }
 
