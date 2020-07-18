@@ -4,8 +4,18 @@
 :root {
     --link-color: #007FFF;
     --color-text: #36363C;
+    --background-color: #ffffff;
 }
 
+[data-theme="moon"] {
+    --color-text: #c9c9c9;
+    --background-color: #1f2025;
+}
+
+[data-theme="sun"] {
+    --color-text: ##36363C;
+    --background-color: #ffffff;
+}
 body,html {
     height: 100%;
     width: 100%;
@@ -14,6 +24,7 @@ body,html {
 
 body {
     font-family: "Source Sans Pro", sans-serif;
+    background-color: var(--background-color);
 }
 
 body::-webkit-scrollbar {
@@ -49,22 +60,22 @@ h1 {
 
 .highlight-link {
     text-decoration: none;
-    color: #36363C;
     display: inline-block;
     padding: 0px 7px;
     transition: all .2s ease-in-out;
     box-sizing: border-box;
     text-decoration: none;
     box-shadow: inset 0 -10px 0 var(--link-color);
+    color: var(--color-text);
 }
 
 .arrow-link {
-    color: #36363C;
     font-size: 1.5rem;
     --webkit-transition: all .15s ease-in-out;
     background-color: transparent;
     text-decoration: none;
     white-space: nowrap;
+    color: var(--color-text);
 }
 
 .table-skills {
@@ -97,13 +108,32 @@ footer {
     margin-bottom: 20px;
 }
 
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+line {
+    fill: white;
+}
+
+#sun {
+    display: none;
+    fill: white;
+}
+
 .footer-links {
     text-decoration: none;
-    color: #36363C;
     display: inline-block;
     padding: 0px 7px;
     transition: all .2s ease-in-out;
     box-sizing: border-box;
+    color: var(--color-text);
 }
 
 @media only screen and (max-width: 870px) {
@@ -124,16 +154,19 @@ footer {
         display: -ms-flexbox;
         display: block;
         padding: 50px 35px;
+        color: var(--color-text);
     }
     .left {
         display: flex;
         margin-right: auto;
         margin-left: auto;
+        color: var(--color-text);
     }
     .right {
         display: flex;
         margin-right: auto;
         margin-left: auto;
+        color: var(--color-text);
     }
 }
 
@@ -157,6 +190,7 @@ footer {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+        color: var(--color-text);
     }
     .left {
         display: flex;
@@ -164,6 +198,7 @@ footer {
         margin-left: 0px;
         float: left;
         padding-left: 60px;
+        color: var(--color-text);        
     }
     .right {
         display: flex;
@@ -171,6 +206,7 @@ footer {
         margin-right: 0px;
         float: right;
         justify-content: center;
+        color: var(--color-text);
     }
 }
 
