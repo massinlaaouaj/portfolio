@@ -2,17 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:300,400|Dosis:300,400,700');
 
 :root {
+    --white: #fff;
     --link-color: #007FFF;
     --color-text: #36363C;
     --background-color: #ffffff;
 }
 
 [data-theme="moon"] {
+    --white: #1f2025;
     --color-text: #c9c9c9;
     --background-color: #1f2025;
 }
 
 [data-theme="sun"] {
+    --white: #fff;
     --color-text: ##36363C;
     --background-color: #ffffff;
 }
@@ -58,9 +61,32 @@ h1 {
     width: 400px;
   }
 
+.soft-skills-list {
+    display: flex;
+}
+
+.soft-skills-button {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: #3D3D3D;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.white {
+    color: var(--white);
+}
+
 .highlight-link {
     text-decoration: none;
-    display: inline-block;
+    display: inline;
     padding: 0px 7px;
     transition: all .2s ease-in-out;
     box-sizing: border-box;
@@ -93,11 +119,35 @@ td {
 
 .table-experience {
     margin-top: 10px;
-    width: 610px;
 }
 
 .table-projects {
     margin-top: 10px;
+}
+
+.project-box {
+    border-style: solid;
+}
+
+.card {
+    display: flex;
+    padding: 24px;
+    border: 3px;
+    max-width: 465px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.blog-image {
+    width: 115px;
+    margin-right: 24px;
+}
+
+.blog-title {
+    margin-top: 0;
+    
+    
 }
 
 footer {
